@@ -88,7 +88,7 @@ services:
       ETHEREUM_JSONRPC_TRACE_URL: http://hardhat:8545
       ETHEREUM_JSONRPC_VARIANT: geth
       CHAIN_ID: "31337"
-      NETWORK: "Axionax Local Testnet v1.5"
+      NETWORK: "axionax Local Testnet v1.5"
       SUBNETWORK: "Anvil"
       COIN: "AXX"
       # Web
@@ -113,7 +113,7 @@ services:
     environment:
       # Point the frontend (running in your browser) to the backend API URL
       NEXT_PUBLIC_API_URL: /blockscout-api
-      NEXT_PUBLIC_NETWORK_NAME: "Axionax Local Testnet v1.5"
+      NEXT_PUBLIC_NETWORK_NAME: "axionax Local Testnet v1.5"
       NEXT_PUBLIC_CHAIN_ID: "31337"
       NEXT_PUBLIC_BASE_PATH: "/explorer"
     depends_on:

@@ -1,7 +1,7 @@
 {
   "_format": "hh-sol-artifact-1",
-  "contractName": "AxionaxVestingVault",
-  "sourceName": "contracts/AxionaxVestingVault.sol",
+  "contractName": "axionaxVestingVault",
+  "sourceName": "contracts/axionaxVestingVault.sol",
   "abi": [
     {
       "inputs": [

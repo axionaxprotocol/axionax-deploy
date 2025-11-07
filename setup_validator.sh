@@ -1,6 +1,6 @@
 #!/bin/bash
 # VPS Validator Automated Setup Script
-# Axionax v1.6 Testnet
+# axionax v1.6 Testnet
 # Usage: bash setup_validator.sh
 
 set -e  # Exit on error
@@ -18,7 +18,7 @@ REPO_URL="https://github.com/axionaxprotocol/axionax-core.git"
 BRANCH="main"
 
 echo -e "${GREEN}================================================${NC}"
-echo -e "${GREEN}   Axionax Validator Setup Script v1.0        ${NC}"
+echo -e "${GREEN}   axionax Validator Setup Script v1.0        ${NC}"
 echo -e "${GREEN}================================================${NC}"
 
 # Check if running as root
@@ -79,7 +79,7 @@ else
 fi
 
 # Step 6: Clone Repository
-echo -e "\n${YELLOW}[6/9] Cloning Axionax repository...${NC}"
+echo -e "\n${YELLOW}[6/9] Cloning axionax repository...${NC}"
 su - $AXIONAX_USER << EOF
 if [ -d "axionax-core" ]; then
     echo "Repository already cloned, pulling latest changes..."
@@ -94,7 +94,7 @@ fi
 EOF
 
 # Step 7: Build Node
-echo -e "\n${YELLOW}[7/9] Building Axionax node (this may take 10-15 minutes)...${NC}"
+echo -e "\n${YELLOW}[7/9] Building axionax node (this may take 10-15 minutes)...${NC}"
 su - $AXIONAX_USER << 'EOF'
 cd ~/axionax-core
 source $HOME/.cargo/env
@@ -132,7 +132,7 @@ cp ~/axionax-core/environments/config.example.yaml ~/.axionax/config/config.yaml
 # Add environment variables to .bashrc
 cat >> ~/.bashrc << 'ENVEOF'
 
-# Axionax Environment
+# axionax Environment
 export AXIONAX_HOME="$HOME/.axionax"
 export AXIONAX_CONFIG="$AXIONAX_HOME/config/config.yaml"
 export AXIONAX_KEYSTORE="$AXIONAX_HOME/keystore"

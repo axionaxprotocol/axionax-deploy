@@ -35,7 +35,7 @@
       ETHEREUM_JSONRPC_HTTP_URL: http://hardhat:8545
       ETHEREUM_JSONRPC_TRACE_URL: http://hardhat:8545
       CHAIN_ID: "8615"
-      NETWORK: "Axionax Local Testnet v1.5"
+      NETWORK: "axionax Local Testnet v1.5"
       COIN: "AXX"
       PORT: "4000"
       DISABLE_EXCHANGE_RATES: "true"

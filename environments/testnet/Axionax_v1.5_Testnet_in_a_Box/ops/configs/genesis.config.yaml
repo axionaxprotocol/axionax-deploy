@@ -1,6 +1,6 @@
 network:
   chain_id: 8615
-  name: "Axionax Mainnet"
+  name: "axionax Mainnet"
   currency: { symbol: "AXX", decimals: 18 }
   bootstraps: ["enode://CHANGE_ME_BOOTSTRAP1", "enode://CHANGE_ME_BOOTSTRAP2", "enode://CHANGE_ME_BOOTSTRAP3"]
 consensus:

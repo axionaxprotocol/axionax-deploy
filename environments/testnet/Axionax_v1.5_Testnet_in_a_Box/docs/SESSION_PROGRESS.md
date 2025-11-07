@@ -46,7 +46,7 @@
 ```powershell
 # 1. เปิด Docker Desktop
 # 2. คัดลอกใบรับรองไปยังโฟลเดอร์ต่อโดเมน
-cd "c:\Users\kong\Desktop\Axionax_v1.5_Testnet_in_a_Box\reverse-proxy\certs"
+cd "c:\Users\kong\Desktop\axionax_v1.5_Testnet_in_a_Box\reverse-proxy\certs"
 copy fullchain.pem axionax.org\fullchain.pem
 copy privkey.pem axionax.org\privkey.pem
 copy fullchain.pem testnet.axionax.org\fullchain.pem
@@ -55,7 +55,7 @@ copy privkey.pem testnet.axionax.org\privkey.pem
 
 ### ขั้นตอนที่ 2: ทดสอบ Nginx Syntax
 ```powershell
-cd "c:\Users\kong\Desktop\Axionax_v1.5_Testnet_in_a_Box"
+cd "c:\Users\kong\Desktop\axionax_v1.5_Testnet_in_a_Box"
 docker compose up -d
 docker exec edge nginx -t
 ```

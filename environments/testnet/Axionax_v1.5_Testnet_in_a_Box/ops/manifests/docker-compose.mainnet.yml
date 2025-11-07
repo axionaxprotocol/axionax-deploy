@@ -50,7 +50,7 @@ services:
       ETHEREUM_JSONRPC_TRACE_URL: http://axionaxd:8545
       ETHEREUM_JSONRPC_VARIANT: geth
       CHAIN_ID: "8615"
-      NETWORK: "Axionax Mainnet"
+      NETWORK: "axionax Mainnet"
       SUBNETWORK: "axionax-1"
       COIN: "AXX"
       SECRET_KEY_BASE: "CHANGE_ME_SECRET"
@@ -72,7 +72,7 @@ services:
     image: ghcr.io/blockscout/frontend:latest
     environment:
       NEXT_PUBLIC_API_URL: /blockscout-api
-      NEXT_PUBLIC_NETWORK_NAME: "Axionax Mainnet"
+      NEXT_PUBLIC_NETWORK_NAME: "axionax Mainnet"
       NEXT_PUBLIC_CHAIN_ID: "8615"
       NEXT_PUBLIC_BASE_PATH: "/explorer"
     depends_on:

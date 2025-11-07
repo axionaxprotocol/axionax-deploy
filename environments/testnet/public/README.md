@@ -1,6 +1,6 @@
-﻿# Axionax Public Testnet Environment
+﻿# axionax Public Testnet Environment
 
-This directory contains infrastructure definitions for the Axionax public testnet rollout.
+This directory contains infrastructure definitions for the axionax public testnet rollout.
 
 ## Components
 

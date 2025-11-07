@@ -1,6 +1,6 @@
-# Axionax Protocol - Deployment Infrastructure ??
+# axionax protocol - Deployment Infrastructure 🚀
 
-Production-ready deployment infrastructure for **Axionax Protocol** services.
+Production-ready deployment infrastructure for **axionax protocol** services.
 
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Protocol](https://img.shields.io/badge/Protocol-axionax-purple)](https://axionax.org)
@@ -38,7 +38,7 @@ Protocol** infrastructure stack on a VPS or cloud environment.
 
 ### Part of axionax Ecosystem
 
-Deploys the full Axionax Protocol stack:
+Deploys the full axionax protocol stack:
 
 - **Protocol Node**: [`../axionax-core`](../axionax-core) - axionax RPC node
 - **Block Explorer**: Blockchain data visualization
@@ -56,9 +56,9 @@ Deploys the full Axionax Protocol stack:
 
 ## What Gets Deployed
 
-### Axionax Protocol Services
+### axionax protocol Services
 
-- **RPC Node (Port 8545/8546)** - Full Axionax Protocol node
+- **RPC Node (Port 8545/8546)** - Full axionax protocol node
   - HTTP JSON-RPC endpoint
   - WebSocket support
   - CORS enabled
@@ -321,12 +321,12 @@ Use our [Issue Manager](../issue-manager) to track:
 - **[TESTNET_LAUNCH_CHECKLIST.md](TESTNET_LAUNCH_CHECKLIST.md)** - Pre-launch checklist
 - **[GITHUB_PAGES_SETUP.md](GITHUB_PAGES_SETUP.md)** - Website hosting setup
 
-## Axionax Protocol Ecosystem
+## axionax protocol Ecosystem
 
 | Component         | Description               | Location                                         | Status     |
 | ----------------- | ------------------------- | ------------------------------------------------ | ---------- |
 | **Deploy** (this) | Infrastructure deployment | `axionax-deploy/`                                | ?? Testing |
-| **Core**          | Axionax Protocol node     | [`../axionax-core`](../axionax-core)             | ? Ready   |
+| **Core**          | axionax protocol node     | [`../axionax-core`](../axionax-core)             | ✅ Ready   |
 | **Web**           | Frontend interface        | [`../axionax-web`](../axionax-web)               | ? Ready   |
 | **SDK**           | Developer SDK             | [`../axionax-sdk-ts`](../axionax-sdk-ts)         | ? Ready   |
 | **Docs**          | Documentation             | [`../axionax-docs`](../axionax-docs)             | ?? Active  |
@@ -368,7 +368,7 @@ Use our [Issue Manager](../issue-manager) to track:
 
 MIT License - see [LICENSE](LICENSE) for details.
 
-**Note**: The Axionax Protocol Core uses AGPLv3. See
+**Note**: The axionax protocol Core uses AGPLv3. See
 [`../axionax-core/LICENSE`](../axionax-core/LICENSE).
 
 ---
@@ -386,7 +386,7 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-**Part of the Axionax Protocol Ecosystem**
+**Part of the axionax protocol Ecosystem**
 
 Built with ?? by the axionax team
 

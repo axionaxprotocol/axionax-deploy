@@ -1,6 +1,6 @@
-# Axionax Environments
+# axionax Environments
 
-This directory contains environment-specific configurations and deployment files for Axionax Core.
+This directory contains environment-specific configurations and deployment files for axionax Core.
 
 ## Directory Structure
 
@@ -8,8 +8,8 @@ This directory contains environment-specific configurations and deployment files
 environments/
 ├── mainnet/              # Mainnet configuration (reserved, not launched)
 ├── testnet/              # Testnet configurations
-│   ├── Axionax_v1.5_Testnet_in_a_Box/
-│   └── Axionax_v1.6_Testnet_in_a_Box/
+│   ├── axionax_v1.5_Testnet_in_a_Box/
+│   └── axionax_v1.6_Testnet_in_a_Box/
 ├── config.example.yaml   # Example configuration template
 └── docker-compose.yaml   # Docker compose setup
 ```
@@ -31,7 +31,7 @@ environments/
 - **Status**: Reserved, NOT launched
 - **Purpose**: Production network (future)
 
-⚠️ **WARNING**: Any network claiming to be "Axionax Mainnet" is a SCAM. Verify at https://axionax.org/networks
+⚠️ **WARNING**: Any network claiming to be "axionax Mainnet" is a SCAM. Verify at https://axionax.org/networks
 
 ## Configuration
 
@@ -54,8 +54,8 @@ docker-compose up -d
 
 ## Documentation
 
-- [Testnet v1.5 Setup](./testnet/Axionax_v1.5_Testnet_in_a_Box/README.md)
-- [Testnet v1.6 Setup](./testnet/Axionax_v1.6_Testnet_in_a_Box/README.md)
+- [Testnet v1.5 Setup](./testnet/axionax_v1.5_Testnet_in_a_Box/README.md)
+- [Testnet v1.6 Setup](./testnet/axionax_v1.6_Testnet_in_a_Box/README.md)
 - [Main Documentation](../docs/)
 
 ## Security

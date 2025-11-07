@@ -1,4 +1,4 @@
-# Axionax Node Configuration
+# axionax Node Configuration
 # v1.6 Multi-Language Architecture
 
 node:
@@ -6,10 +6,10 @@ node:
   data_dir: ".axionax"
   log_level: "info"
   mode: "full"  # validator, worker, full, light
-  chain_id: 86137  # Axionax Testnet (AXI testnet)
+  chain_id: 86137  # axionax Testnet (AXI testnet)
   # Official chain IDs:
-  # - 86137: Axionax Testnet (active)
-  # - 86150: Axionax Mainnet (reserved, not launched)
+  # - 86137: axionax Testnet (active)
+  # - 86150: axionax Mainnet (reserved, not launched)
   sync_mode: "full"
 
 network:

@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Axionax RPC Node Setup Script
+# axionax RPC Node Setup Script
 # Sets up a dedicated RPC/WebSocket node for public testnet access
 #
 # Usage: bash setup_rpc_node.sh [OPTIONS]
@@ -66,7 +66,7 @@ while [[ $# -gt 0 ]]; do
 done
 
 echo -e "${BLUE}========================================${NC}"
-echo -e "${BLUE}   Axionax RPC Node Setup${NC}"
+echo -e "${BLUE}   axionax RPC Node Setup${NC}"
 echo -e "${BLUE}========================================${NC}"
 echo ""
 echo -e "${GREEN}Configuration:${NC}"
@@ -128,13 +128,13 @@ mkdir -p "$DATA_DIR/logs"
 chown -R axionax:axionax "$DATA_DIR"
 chmod 755 "$DATA_DIR"
 
-# Clone and build Axionax (if not already built)
+# Clone and build axionax (if not already built)
 AXIONAX_HOME="/home/axionax/axionax-core"
 if [ ! -d "$AXIONAX_HOME" ]; then
-  echo -e "${BLUE}[6/8]${NC} Cloning Axionax repository..."
+  echo -e "${BLUE}[6/8]${NC} Cloning axionax repository..."
   sudo -u axionax git clone https://github.com/axionaxprotocol/axionax-core.git "$AXIONAX_HOME"
 else
-  echo -e "${BLUE}[6/8]${NC} Updating Axionax repository..."
+  echo -e "${BLUE}[6/8]${NC} Updating axionax repository..."
   cd "$AXIONAX_HOME"
   sudo -u axionax git pull
 fi
@@ -142,7 +142,7 @@ fi
 cd "$AXIONAX_HOME"
 
 # Build in release mode
-echo -e "${BLUE}[7/8]${NC} Building Axionax (this may take 10-15 minutes)..."
+echo -e "${BLUE}[7/8]${NC} Building axionax (this may take 10-15 minutes)..."
 sudo -u axionax cargo build --release --bin axionax
 
 # Copy binary to /usr/local/bin
@@ -153,7 +153,7 @@ chmod +x /usr/local/bin/axionax
 echo -e "${BLUE}[8/8]${NC} Creating configuration..."
 
 cat > "$DATA_DIR/config.toml" <<EOF
-# Axionax RPC Node Configuration
+# axionax RPC Node Configuration
 # Generated: $(date)
 
 [network]
@@ -195,7 +195,7 @@ chown axionax:axionax "$DATA_DIR/config.toml"
 # Create systemd service
 cat > /etc/systemd/system/axionax-rpc.service <<EOF
 [Unit]
-Description=Axionax RPC Node
+Description=axionax RPC Node
 After=network.target
 
 [Service]
@@ -230,7 +230,7 @@ ufw --force enable
 ufw default deny incoming
 ufw default allow outgoing
 ufw allow ssh
-ufw allow 30303/tcp comment 'Axionax P2P'
+ufw allow 30303/tcp comment 'axionax P2P'
 ufw allow 80/tcp comment 'HTTP'
 ufw allow 443/tcp comment 'HTTPS'
 
@@ -240,7 +240,7 @@ if [ -n "$DOMAIN" ]; then
   
   # Create nginx config
   cat > /etc/nginx/sites-available/axionax-rpc <<EOF
-# Axionax RPC Reverse Proxy
+# axionax RPC Reverse Proxy
 # HTTP RPC endpoint
 upstream axionax_rpc {
     server 127.0.0.1:$RPC_PORT;

@@ -1,4 +1,4 @@
-Axionax v1.5 — Testnet-in-a-Box Readiness Report (2025-10-20)
+axionax v1.5 — Testnet-in-a-Box Readiness Report (2025-10-20)
 
 Overview
 This report captures the current local testnet state, endpoints, deployed contracts, and how to operate/restore the stack. It also includes a short checklist to publish public endpoints for external testers.

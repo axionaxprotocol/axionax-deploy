@@ -1,4 +1,4 @@
-# Axionax Whitepaper v1.5 Compatibility Map (Testnet Mock)
+# axionax Whitepaper v1.5 Compatibility Map (Testnet Mock)
 
 Status legend: DONE (real), MOCK (simulated), PLANNED (not implemented)
 

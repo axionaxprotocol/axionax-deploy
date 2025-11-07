@@ -1,7 +1,7 @@
 {
   "_format": "hh-sol-artifact-1",
   "contractName": "IERC20",
-  "sourceName": "contracts/AxionaxVestingVault.sol",
+  "sourceName": "contracts/axionaxVestingVault.sol",
   "abi": [
     {
       "inputs": [

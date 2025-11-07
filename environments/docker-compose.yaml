@@ -10,7 +10,7 @@ volumes:
     name: axionax-data
 
 services:
-  # Axionax Core Node (Rust)
+  # axionax Core Node (Rust)
   core-node:
     build:
       context: .

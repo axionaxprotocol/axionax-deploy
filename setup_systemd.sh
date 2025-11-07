@@ -1,5 +1,5 @@
 #!/bin/bash
-# Systemd Service Setup for Axionax Validator
+# Systemd Service Setup for axionax Validator
 # Run as root: sudo bash setup_systemd.sh
 
 set -e
@@ -7,12 +7,12 @@ set -e
 AXIONAX_USER="axionax"
 SERVICE_FILE="/etc/systemd/system/axionax-validator.service"
 
-echo "Setting up Axionax Validator systemd service..."
+echo "Setting up axionax Validator systemd service..."
 
 # Create service file
 cat > $SERVICE_FILE << 'EOF'
 [Unit]
-Description=Axionax Validator Node
+Description=axionax Validator Node
 After=network-online.target
 Wants=network-online.target
 

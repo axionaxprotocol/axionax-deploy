@@ -1,7 +1,7 @@
-# Axionax V1.6 Testnet in a Box
+# axionax V1.6 Testnet in a Box
 
 ## คำอธิบาย
-ระบบนี้ช่วยให้คุณสามารถรัน Testnet ของ Axionax V1.6 ได้ครบทุกส่วนในเครื่องเดียว โดยใช้ Docker Compose
+ระบบนี้ช่วยให้คุณสามารถรัน Testnet ของ axionax V1.6 ได้ครบทุกส่วนในเครื่องเดียว โดยใช้ Docker Compose
 
 ## โครงสร้าง
 - `Dockerfile` สร้าง node จาก Rust

@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# Axionax Testnet Pre-Launch Verification Script
+# axionax Testnet Pre-Launch Verification Script
 # Verifies all systems are ready for public testnet launch
 
 set -e
 
-echo "🚀 Axionax Testnet Pre-Launch Verification"
+echo "🚀 axionax Testnet Pre-Launch Verification"
 echo "=========================================="
 echo ""
 

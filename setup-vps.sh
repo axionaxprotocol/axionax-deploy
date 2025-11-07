@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # VPS Deployment Setup Script
-# This script sets up the Axionax Protocol infrastructure on a VPS
+# This script sets up the axionax protocol infrastructure on a VPS
 
 set -e
 
-echo "=== Axionax VPS Deployment Setup ==="
+echo "=== axionax VPS Deployment Setup ==="
 
 # Colors
 RED='\033[0;31m'

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Genesis Configuration Generator for Axionax Testnet
+Genesis Configuration Generator for axionax Testnet
 Creates genesis.json with initial validators and token allocations
 """
 
@@ -12,7 +12,7 @@ from typing import List, Dict, Any
 
 # Testnet Configuration
 CHAIN_ID = "axionax-testnet-1"
-CHAIN_NAME = "Axionax Public Testnet"
+CHAIN_NAME = "axionax Public Testnet"
 GENESIS_TIME = datetime.now(timezone.utc).isoformat()
 
 # Token Economics
@@ -121,7 +121,7 @@ def create_genesis_accounts() -> List[Dict[str, Any]]:
 def create_genesis_config() -> Dict[str, Any]:
     """Create complete genesis configuration"""
     
-    print("\n🚀 Generating Axionax Testnet Genesis Configuration...\n")
+    print("\n🚀 Generating axionax Testnet Genesis Configuration...\n")
     
     validators = create_genesis_validators(4)
     accounts = create_genesis_accounts()
@@ -195,7 +195,7 @@ def create_genesis_config() -> Dict[str, Any]:
                 ],
                 "denom_metadata": [
                     {
-                        "description": "The native staking token of Axionax",
+                        "description": "The native staking token of axionax",
                         "denom_units": [
                             {
                                 "denom": "axx",
@@ -210,7 +210,7 @@ def create_genesis_config() -> Dict[str, Any]:
                         ],
                         "base": "axx",
                         "display": "AXX",
-                        "name": "Axionax Token",
+                        "name": "axionax Token",
                         "symbol": "AXX"
                     }
                 ]
@@ -236,7 +236,7 @@ def create_genesis_config() -> Dict[str, Any]:
                             "identity": "",
                             "website": "",
                             "security_contact": "",
-                            "details": "Genesis validator for Axionax testnet"
+                            "details": "Genesis validator for axionax testnet"
                         },
                         "unbonding_height": "0",
                         "unbonding_time": "1970-01-01T00:00:00Z",
@@ -314,7 +314,7 @@ def generate_validator_instructions(validators: List[Dict[str, Any]]):
 
 ## Setup Steps
 
-1. Clone and build Axionax node:
+1. Clone and build axionax node:
 ```bash
 git clone https://github.com/axionaxprotocol/axionax-core.git
 cd axionax-core

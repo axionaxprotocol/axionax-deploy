@@ -1,4 +1,4 @@
-# Axionax Mainnet v1.5 Architecture → Current Stack Compatibility
+# axionax Mainnet v1.5 Architecture → Current Stack Compatibility
 
 This document maps the requested mainnet architecture (v1.5 baseline) to what exists in this repository (local testnet-in-a-box), highlights gaps, and proposes a phased migration.
 
@@ -24,7 +24,7 @@ This document maps the requested mainnet architecture (v1.5 baseline) to what ex
   - Remote Signer/Key Ceremony/Genesis Publisher → Not implemented. Added placeholders (systemd, signer service in compose). Requires real binaries/PKI.
   - Telemetry (Prometheus/Grafana/Loki/OTLP/SIEM) → Not implemented. Can be added in ops manifests later.
 
-- L3 Axionax Cloud (Marketplace)
+- L3 axionax Cloud (Marketplace)
   - Job lifecycle/SLA/escrow/pricing → Not present as smart contracts or node modules. Needs on-chain contracts and off-chain services.
 
 - L4 Governance

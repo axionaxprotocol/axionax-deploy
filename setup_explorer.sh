@@ -1,7 +1,7 @@
 #!/bin/bash
 #
-# Axionax Block Explorer Setup Script
-# Deploys Blockscout explorer for Axionax testnet
+# axionax Block Explorer Setup Script
+# Deploys Blockscout explorer for axionax testnet
 #
 # Usage: bash setup_explorer.sh [OPTIONS]
 # Options:
@@ -78,7 +78,7 @@ fi
 DB_PASSWORD=$(openssl rand -base64 32)
 
 echo -e "${BLUE}========================================${NC}"
-echo -e "${BLUE}   Axionax Block Explorer Setup${NC}"
+echo -e "${BLUE}   axionax Block Explorer Setup${NC}"
 echo -e "${BLUE}========================================${NC}"
 echo ""
 echo -e "${GREEN}Configuration:${NC}"
@@ -183,8 +183,8 @@ services:
       # Chain configuration
       CHAIN_ID: '$CHAIN_ID'
       COIN: 'AXX'
-      SUBNETWORK: 'Axionax Testnet'
-      NETWORK: 'Axionax'
+      SUBNETWORK: 'axionax Testnet'
+      NETWORK: 'axionax'
       LOGO: '/images/axionax_logo.svg'
       LOGO_FOOTER: '/images/axionax_logo.svg'
       
@@ -211,7 +211,7 @@ services:
       # UI
       SHOW_TESTNET_LABEL: 'true'
       TESTNET_LABEL: 'TESTNET'
-      SUPPORTED_CHAINS: '[{"title":"Axionax Testnet","url":"https://$DOMAIN"}]'
+      SUPPORTED_CHAINS: '[{"title":"axionax Testnet","url":"https://$DOMAIN"}]'
       
       # Social links
       FOOTER_GITHUB_LINK: 'https://github.com/axionaxprotocol'
@@ -347,7 +347,7 @@ certbot --nginx -d "$DOMAIN" --email "$SSL_EMAIL" --agree-tos --non-interactive 
 
 # Save configuration
 cat > "$DATA_DIR/config.txt" <<EOF
-Axionax Block Explorer Configuration
+axionax Block Explorer Configuration
 =====================================
 Domain: https://$DOMAIN
 Chain ID: $CHAIN_ID

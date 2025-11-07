@@ -1,4 +1,4 @@
-# Axionax Mainnet Readiness Checklist
+# axionax Mainnet Readiness Checklist
 
 ## D−30 ~ D−7
 - [ ] Freeze genesis/params, audit PoPC timers/fees/slash

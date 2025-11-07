@@ -1,6 +1,6 @@
 {
   "version": "1.5",
-  "network": "Axionax Local Testnet v1.5",
+  "network": "axionax Local Testnet v1.5",
   "chainId": 31337,
   "consensus": {
     "block_time_seconds": 2,

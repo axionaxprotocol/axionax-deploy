@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Axionax Faucet Setup Script
+# axionax Faucet Setup Script
 # Deploys testnet faucet application
 #
 # Usage: bash setup_faucet.sh [OPTIONS]
@@ -79,7 +79,7 @@ if [ -z "$PRIVATE_KEY" ]; then
 fi
 
 echo -e "${BLUE}========================================${NC}"
-echo -e "${BLUE}   Axionax Faucet Setup${NC}"
+echo -e "${BLUE}   axionax Faucet Setup${NC}"
 echo -e "${BLUE}========================================${NC}"
 echo ""
 echo -e "${GREEN}Configuration:${NC}"
@@ -140,7 +140,7 @@ chown -R faucet:faucet "$DATA_DIR"
 # Clone and build faucet
 FAUCET_HOME="/home/faucet/axionax-core"
 if [ ! -d "$FAUCET_HOME" ]; then
-  echo -e "${BLUE}[6/8]${NC} Cloning Axionax repository..."
+  echo -e "${BLUE}[6/8]${NC} Cloning axionax repository..."
   sudo -u faucet git clone https://github.com/axionaxprotocol/axionax-core.git "$FAUCET_HOME"
 else
   echo -e "${BLUE}[6/8]${NC} Updating repository..."
@@ -177,7 +177,7 @@ chown faucet:faucet "$DATA_DIR/.env"
 # Create systemd service
 cat > /etc/systemd/system/axionax-faucet.service <<EOF
 [Unit]
-Description=Axionax Testnet Faucet
+Description=axionax Testnet Faucet
 After=network.target
 
 [Service]
@@ -311,7 +311,7 @@ certbot --nginx -d "$DOMAIN" --email "$SSL_EMAIL" --agree-tos --non-interactive 
 
 # Save configuration
 cat > "$DATA_DIR/config.txt" <<EOF
-Axionax Faucet Configuration
+axionax Faucet Configuration
 ============================
 Domain: https://$DOMAIN
 Chain ID: $CHAIN_ID

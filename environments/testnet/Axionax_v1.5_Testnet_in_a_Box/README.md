@@ -1,11 +1,11 @@
 # 🛡️ Security Policy
 
-## 🚨 Official Axionax Networks
+## 🚨 Official axionax Networks
 
 ### ✅ Testnet (Active)
 
 ```yaml
-Network Name: Axionax Testnet
+Network Name: axionax Testnet
 Chain ID:     86137
 Genesis Hash: [To be published after deployment]
 Status:       ACTIVE (v1.6)
@@ -43,11 +43,11 @@ Reserved Chain ID: 86150
 
 ⚠️ **CRITICAL WARNING:**
 
-**ANY network claiming to be "Axionax Mainnet" is a SCAM until officially announced.**
+**ANY network claiming to be "axionax Mainnet" is a SCAM until officially announced.**
 
 **How to verify official launch:**
 1. ✅ Announcement on https://axionax.org
-2. ✅ Confirmed on Twitter: @AxionaxProtocol
+2. ✅ Confirmed on Twitter: @axionaxProtocol
 3. ✅ Posted in Discord: https://discord.gg/axionax
 4. ✅ Genesis hash published in this repository
 5. ✅ Signed with foundation PGP key
@@ -73,7 +73,7 @@ Reserved Chain ID: 86150
 
 ### Vulnerability Disclosure
 
-The Axionax team takes security vulnerabilities seriously. We appreciate your efforts to responsibly disclose your findings.
+The axionax team takes security vulnerabilities seriously. We appreciate your efforts to responsibly disclose your findings.
 
 **Please DO NOT file a public issue for security vulnerabilities.**
 
@@ -105,7 +105,7 @@ When reporting a vulnerability, please include:
 
 ### Clone Networks / Fake Mainnets
 
-If you discover networks impersonating Axionax:
+If you discover networks impersonating axionax:
 
 **Email:** security@axionax.org
 
@@ -117,9 +117,9 @@ If you discover networks impersonating Axionax:
 - Date discovered
 
 **Examples of impersonation:**
-- Networks claiming to be "Axionax Official Mainnet"
+- Networks claiming to be "axionax Official Mainnet"
 - Using "AXX" token symbol without authorization
-- Copying Axionax branding and logo
+- Copying axionax branding and logo
 - Fake validator recruitment programs
 - Phishing websites mimicking axionax.org
 
@@ -179,7 +179,7 @@ axionax-cli verify-genesis --chain-id 86137
 axionax-cli network-info
 
 # Should display:
-# Network: Axionax Testnet
+# Network: axionax Testnet
 # Chain ID: 86137
 # Version: v1.6.0
 # Genesis: 0x[official]
