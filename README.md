@@ -1,46 +1,46 @@
-﻿# AxionAX Protocol - Deployment Infrastructure 🚀
+# Axionax Protocol - Deployment Infrastructure ??
 
-Production-ready deployment infrastructure for **AxionAX Protocol** services.
+Production-ready deployment infrastructure for **Axionax Protocol** services.
 
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Protocol](https://img.shields.io/badge/Protocol-AxionAX-purple)](https://axionax.org)
+[![Protocol](https://img.shields.io/badge/Protocol-axionax-purple)](https://axionax.org)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED)](https://www.docker.com/)
-[![Status](https://img.shields.io/badge/Status-Pre--Testnet-orange)](https://github.com/axionaxprotocol/axionaxiues)
+[![Status](https://img.shields.io/badge/Status-Pre--Testnet-orange)](https://github.com/axionaxprotocol/axionax-core)
 
 ---
 
-## 📢 Latest Update (November 2025)
+## ?? Latest Update (November 2025)
 
-🎯 **Preparing Infrastructure for Public Testnet Launch!**
+?? **Preparing Infrastructure for Public Testnet Launch!**
 
 We're completing final preparations before public testnet:
 
-✅ **Infrastructure Checklist:**
-- 🏗️ Monitoring & Alerting Setup (Prometheus + Grafana)
-- 🚀 Load Testing & Performance Optimization
-- 💾 Backup & Disaster Recovery Plans
-- 🔒 Security Hardening & SSL Configuration
-- 📊 Resource Scaling Strategy
+? **Infrastructure Checklist:**
+- ??? Monitoring & Alerting Setup (Prometheus + Grafana)
+- ?? Load Testing & Performance Optimization
+- ?? Backup & Disaster Recovery Plans
+- ?? Security Hardening & SSL Configuration
+- ?? Resource Scaling Strategy
 
-🔥 **Active Development:**
+?? **Active Development:**
 - Security audits in progress
 - Performance benchmarking ongoing
 - Documentation being finalized
 
-📦 **Deployment Ready:** All scripts tested and validated for VPS deployment
+?? **Deployment Ready:** All scripts tested and validated for VPS deployment
 
 ---
 
 ## Overview
 
-This repository contains everything needed to deploy the complete **AxionAX
+This repository contains everything needed to deploy the complete **axionax
 Protocol** infrastructure stack on a VPS or cloud environment.
 
-### Part of AxionAX Ecosystem
+### Part of axionax Ecosystem
 
-Deploys the full AxionAX Protocol stack:
+Deploys the full Axionax Protocol stack:
 
-- **Protocol Node**: [`../axionax-core`](../axionax-core) - AxionAX RPC node
+- **Protocol Node**: [`../axionax-core`](../axionax-core) - axionax RPC node
 - **Block Explorer**: Blockchain data visualization
 - **Testnet Faucet**: AXX token distribution
 - **Web Interface**: [`../axionax-web`](../axionax-web) - Static frontend
@@ -56,15 +56,15 @@ Deploys the full AxionAX Protocol stack:
 
 ## What Gets Deployed
 
-### AxionAX Protocol Services
+### Axionax Protocol Services
 
-- **RPC Node (Port 8545/8546)** - Full AxionAX Protocol node
+- **RPC Node (Port 8545/8546)** - Full Axionax Protocol node
   - HTTP JSON-RPC endpoint
   - WebSocket support
   - CORS enabled
   - Health monitoring
 - **Block Explorer (Port 3001)** - Blockchain visualization
-  - Real-time AxionAX block data
+  - Real-time axionax block data
   - Transaction/block search
   - Account history
   - Network statistics
@@ -75,7 +75,7 @@ Deploys the full AxionAX Protocol stack:
 - **Monitoring Stack** - System health
   - Grafana dashboards (Port 3000)
   - Prometheus metrics (Port 9090)
-  - AxionAX node health alerts
+  - axionax node health alerts
 
 ### Infrastructure Components
 
@@ -308,12 +308,12 @@ docker-compose -f docker-compose.vps.yml up -d
 
 Use our [Issue Manager](../issue-manager) to track:
 
-- [ ] 🏗️ Infrastructure monitoring setup
-- [ ] 🚀 Load testing completed
-- [ ] 💾 Backup systems verified
-- [ ] 🔒 Security audit passed
-- [ ] 📊 Scaling strategy tested
-- [ ] 📚 Documentation complete
+- [ ] ??? Infrastructure monitoring setup
+- [ ] ?? Load testing completed
+- [ ] ?? Backup systems verified
+- [ ] ?? Security audit passed
+- [ ] ?? Scaling strategy tested
+- [ ] ?? Documentation complete
 
 ## Documentation
 
@@ -321,18 +321,18 @@ Use our [Issue Manager](../issue-manager) to track:
 - **[TESTNET_LAUNCH_CHECKLIST.md](TESTNET_LAUNCH_CHECKLIST.md)** - Pre-launch checklist
 - **[GITHUB_PAGES_SETUP.md](GITHUB_PAGES_SETUP.md)** - Website hosting setup
 
-## AxionAX Protocol Ecosystem
+## Axionax Protocol Ecosystem
 
 | Component         | Description               | Location                                         | Status     |
 | ----------------- | ------------------------- | ------------------------------------------------ | ---------- |
-| **Deploy** (this) | Infrastructure deployment | `axionax-deploy/`                                | 🔥 Testing |
-| **Core**          | AxionAX Protocol node     | [`../axionax-core`](../axionax-core)             | ✅ Ready   |
-| **Web**           | Frontend interface        | [`../axionax-web`](../axionax-web)               | ✅ Ready   |
-| **SDK**           | Developer SDK             | [`../axionax-sdk-ts`](../axionax-sdk-ts)         | ✅ Ready   |
-| **Docs**          | Documentation             | [`../axionax-docs`](../axionax-docs)             | 📝 Active  |
-| **DevTools**      | Development tools         | [`../axionax-devtools`](../axionax-devtools)     | ✅ Ready   |
-| **Marketplace**   | Compute marketplace       | [`../axionax-marketplace`](../axionax-marketplace) | 🚧 Beta  |
-| **Issue Manager** | Task tracking             | [`../issue-manager`](../issue-manager)           | 🎉 New!    |
+| **Deploy** (this) | Infrastructure deployment | `axionax-deploy/`                                | ?? Testing |
+| **Core**          | Axionax Protocol node     | [`../axionax-core`](../axionax-core)             | ? Ready   |
+| **Web**           | Frontend interface        | [`../axionax-web`](../axionax-web)               | ? Ready   |
+| **SDK**           | Developer SDK             | [`../axionax-sdk-ts`](../axionax-sdk-ts)         | ? Ready   |
+| **Docs**          | Documentation             | [`../axionax-docs`](../axionax-docs)             | ?? Active  |
+| **DevTools**      | Development tools         | [`../axionax-devtools`](../axionax-devtools)     | ? Ready   |
+| **Marketplace**   | Compute marketplace       | [`../axionax-marketplace`](../axionax-marketplace) | ?? Beta  |
+| **Issue Manager** | Task tracking             | [`../issue-manager`](../issue-manager)           | ?? New!    |
 
 ---
 
@@ -340,7 +340,7 @@ Use our [Issue Manager](../issue-manager) to track:
 
 ### Core Components
 
-- **[Protocol Core](../axionax-core)** - AxionAX blockchain implementation
+- **[Protocol Core](../axionax-core)** - axionax blockchain implementation
 - **[Web Interface](../axionax-web)** - Frontend (deployed separately)
 - **[SDK](../axionax-sdk-ts)** - Used by Explorer/Faucet APIs
 - **[Documentation](../axionax-docs)** - Full protocol documentation
@@ -356,7 +356,7 @@ Use our [Issue Manager](../issue-manager) to track:
 ## Contributing
 
 1. Fork the main repository:
-   [axionaxprotocol/axionaxiues](https://github.com/axionaxprotocol/axionaxiues)
+   [axionaxprotocol/axionax-core](https://github.com/axionaxprotocol/axionax-core)
 2. Create feature branch
 3. Work in the `deploy/` directory
 4. Test changes with Docker Compose locally
@@ -368,14 +368,14 @@ Use our [Issue Manager](../issue-manager) to track:
 
 MIT License - see [LICENSE](LICENSE) for details.
 
-**Note**: The AxionAX Protocol Core uses AGPLv3. See
+**Note**: The Axionax Protocol Core uses AGPLv3. See
 [`../axionax-core/LICENSE`](../axionax-core/LICENSE).
 
 ---
 
 ## Support
 
-- **Issues**: https://github.com/axionaxprotocol/axionaxiues/issues
+- **Issues**: https://github.com/axionaxprotocol/axionax-core/issues
 - **Docs**: https://docs.axionax.org or [`../axionax-docs`](../axionax-docs)
 - **Main Repository**: https://github.com/axionaxprotocol/axionaxiues
 
@@ -386,8 +386,8 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-**Part of the AxionAX Protocol Ecosystem**
+**Part of the Axionax Protocol Ecosystem**
 
-Built with ❤️ by the AxionAX team
+Built with ?? by the axionax team
 
 **Last Updated**: November 7, 2025
