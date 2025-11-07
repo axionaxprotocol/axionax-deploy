@@ -5,6 +5,29 @@ Production-ready deployment infrastructure for **AxionAX Protocol** services.
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Protocol](https://img.shields.io/badge/Protocol-AxionAX-purple)](https://axionax.org)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED)](https://www.docker.com/)
+[![Status](https://img.shields.io/badge/Status-Pre--Testnet-orange)](https://github.com/axionaxprotocol/axionaxiues)
+
+---
+
+## 📢 Latest Update (November 2025)
+
+🎯 **Preparing Infrastructure for Public Testnet Launch!**
+
+We're completing final preparations before public testnet:
+
+✅ **Infrastructure Checklist:**
+- 🏗️ Monitoring & Alerting Setup (Prometheus + Grafana)
+- 🚀 Load Testing & Performance Optimization
+- 💾 Backup & Disaster Recovery Plans
+- 🔒 Security Hardening & SSL Configuration
+- 📊 Resource Scaling Strategy
+
+🔥 **Active Development:**
+- Security audits in progress
+- Performance benchmarking ongoing
+- Documentation being finalized
+
+📦 **Deployment Ready:** All scripts tested and validated for VPS deployment
 
 ---
 
@@ -17,14 +40,17 @@ Protocol** infrastructure stack on a VPS or cloud environment.
 
 Deploys the full AxionAX Protocol stack:
 
-- **Protocol Node**: [`../core`](../core) - AxionAX RPC node
+- **Protocol Node**: [`../axionax-core`](../axionax-core) - AxionAX RPC node
 - **Block Explorer**: Blockchain data visualization
 - **Testnet Faucet**: AXX token distribution
-- **Web Interface**: [`../web`](../web) - Static frontend
-- **Monitoring**: Prometheus + Grafana
+- **Web Interface**: [`../axionax-web`](../axionax-web) - Static frontend
+- **Monitoring**: Prometheus + Grafana dashboards
+- **Issue Tracker**: [`../issue-manager`](../issue-manager) - Track deployment tasks
 
 **Main Repository**:
 [axionaxprotocol/axionaxiues](https://github.com/axionaxprotocol/axionaxiues)
+
+**Pre-Testnet Status:** Infrastructure ready, final testing in progress
 
 ---
 
@@ -252,27 +278,61 @@ docker-compose -f docker-compose.vps.yml up -d
 
 ## Requirements
 
+### Minimum Requirements (Testing)
+
 - Ubuntu 20.04+ or Debian 11+
-- Minimum 4GB RAM, 2 CPU cores
+- **4GB RAM**, 2 CPU cores
 - 50GB+ SSD storage
 - Root or sudo access
 - Domain with DNS access
 
+### Recommended for Pre-Testnet (Current Phase)
+
+- Ubuntu 22.04 LTS
+- **8GB RAM**, 4 CPU cores
+- 100GB NVMe SSD
+- 2TB+ bandwidth/month
+- Dedicated IP
+- Cost: ~$20-40/month
+
+### Production Testnet (After Launch)
+
+- Ubuntu 22.04 LTS
+- **16GB RAM**, 8 CPU cores
+- 200GB NVMe SSD
+- 4TB+ bandwidth/month
+- DDoS protection
+- Cost: ~$60-100/month
+
+## Pre-Launch Checklist
+
+Use our [Issue Manager](../issue-manager) to track:
+
+- [ ] 🏗️ Infrastructure monitoring setup
+- [ ] 🚀 Load testing completed
+- [ ] 💾 Backup systems verified
+- [ ] 🔒 Security audit passed
+- [ ] 📊 Scaling strategy tested
+- [ ] 📚 Documentation complete
+
 ## Documentation
 
 - **[VPS_DEPLOYMENT.md](VPS_DEPLOYMENT.md)** - Complete deployment guide
+- **[TESTNET_LAUNCH_CHECKLIST.md](TESTNET_LAUNCH_CHECKLIST.md)** - Pre-launch checklist
 - **[GITHUB_PAGES_SETUP.md](GITHUB_PAGES_SETUP.md)** - Website hosting setup
 
 ## AxionAX Protocol Ecosystem
 
-| Component         | Description               | Location                     |
-| ----------------- | ------------------------- | ---------------------------- |
-| **Deploy** (this) | Infrastructure deployment | `deploy/`                    |
-| **Core**          | AxionAX Protocol node     | [`../core`](../core)         |
-| **Web**           | Frontend interface        | [`../web`](../web)           |
-| **SDK**           | Developer SDK             | [`../sdk`](../sdk)           |
-| **Docs**          | Documentation             | [`../docs`](../docs)         |
-| **DevTools**      | Development tools         | [`../devtools`](../devtools) |
+| Component         | Description               | Location                                         | Status     |
+| ----------------- | ------------------------- | ------------------------------------------------ | ---------- |
+| **Deploy** (this) | Infrastructure deployment | `axionax-deploy/`                                | 🔥 Testing |
+| **Core**          | AxionAX Protocol node     | [`../axionax-core`](../axionax-core)             | ✅ Ready   |
+| **Web**           | Frontend interface        | [`../axionax-web`](../axionax-web)               | ✅ Ready   |
+| **SDK**           | Developer SDK             | [`../axionax-sdk-ts`](../axionax-sdk-ts)         | ✅ Ready   |
+| **Docs**          | Documentation             | [`../axionax-docs`](../axionax-docs)             | 📝 Active  |
+| **DevTools**      | Development tools         | [`../axionax-devtools`](../axionax-devtools)     | ✅ Ready   |
+| **Marketplace**   | Compute marketplace       | [`../axionax-marketplace`](../axionax-marketplace) | 🚧 Beta  |
+| **Issue Manager** | Task tracking             | [`../issue-manager`](../issue-manager)           | 🎉 New!    |
 
 ---
 
@@ -280,10 +340,10 @@ docker-compose -f docker-compose.vps.yml up -d
 
 ### Core Components
 
-- **[Protocol Core](../core)** - AxionAX blockchain implementation
-- **[Web Interface](../web)** - Frontend (deployed separately)
-- **[SDK](../sdk)** - Used by Explorer/Faucet APIs
-- **[Documentation](../docs)** - Full protocol documentation
+- **[Protocol Core](../axionax-core)** - AxionAX blockchain implementation
+- **[Web Interface](../axionax-web)** - Frontend (deployed separately)
+- **[SDK](../axionax-sdk-ts)** - Used by Explorer/Faucet APIs
+- **[Documentation](../axionax-docs)** - Full protocol documentation
 
 ### External Resources
 
@@ -309,14 +369,14 @@ docker-compose -f docker-compose.vps.yml up -d
 MIT License - see [LICENSE](LICENSE) for details.
 
 **Note**: The AxionAX Protocol Core uses AGPLv3. See
-[`../core/LICENSE`](../core/LICENSE).
+[`../axionax-core/LICENSE`](../axionax-core/LICENSE).
 
 ---
 
 ## Support
 
 - **Issues**: https://github.com/axionaxprotocol/axionaxiues/issues
-- **Docs**: https://docs.axionax.org or [`../docs`](../docs)
+- **Docs**: https://docs.axionax.org or [`../axionax-docs`](../axionax-docs)
 - **Main Repository**: https://github.com/axionaxprotocol/axionaxiues
 
 ### Community (Coming Q1 2026)
@@ -330,4 +390,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 Built with ❤️ by the AxionAX team
 
-**Last Updated**: November 6, 2025
+**Last Updated**: November 7, 2025

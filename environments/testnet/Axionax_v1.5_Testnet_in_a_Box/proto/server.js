@@ -3,6 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 const app = express();
+app.disable('x-powered-by');
 const PORT = process.env.PORT || 8082;
 
 app.use(express.json({ limit: '1mb' }));
