@@ -40,15 +40,14 @@ Protocol** infrastructure stack on a VPS or cloud environment.
 
 Deploys the full axionax protocol stack:
 
-- **Protocol Node**: [`../axionax-core`](../axionax-core) - axionax RPC node
+- **Protocol Node**: [`axionax-core`](https://github.com/axionaxprotocol/axionax-core) - axionax RPC node
 - **Block Explorer**: Blockchain data visualization
 - **Testnet Faucet**: AXX token distribution
-- **Web Interface**: [`../axionax-web`](../axionax-web) - Static frontend
+- **Web Interface**: [`axionax-web`](https://github.com/axionaxprotocol/axionax-web) - Static frontend
 - **Monitoring**: Prometheus + Grafana dashboards
-- **Issue Tracker**: [`../issue-manager`](../issue-manager) - Track deployment tasks
+- **Issue Tracker**: [`issue-manager`](https://github.com/axionaxprotocol/issue-manager) - Track deployment tasks
 
-**Main Repository**:
-[axionaxprotocol/axionaxiues](https://github.com/axionaxprotocol/axionaxiues)
+**GitHub Organization**: https://github.com/axionaxprotocol
 
 **Pre-Testnet Status:** Infrastructure ready, final testing in progress
 
@@ -347,7 +346,7 @@ Use our [Issue Manager](../issue-manager) to track:
 
 ### External Resources
 
-- **Main Repository**: https://github.com/axionaxprotocol/axionaxiues
+- **GitHub Organization**: https://github.com/axionaxprotocol
 - **Protocol Website**: https://axionax.org
 - **Documentation**: https://docs.axionax.org
 
@@ -355,12 +354,11 @@ Use our [Issue Manager](../issue-manager) to track:
 
 ## Contributing
 
-1. Fork the main repository:
-   [axionaxprotocol/axionax-core](https://github.com/axionaxprotocol/axionax-core)
+1. Fork the repository:
+   [axionaxprotocol/axionax-deploy](https://github.com/axionaxprotocol/axionax-deploy)
 2. Create feature branch
-3. Work in the `deploy/` directory
-4. Test changes with Docker Compose locally
-5. Submit pull request
+3. Test changes with Docker Compose locally
+4. Submit pull request
 
 ---
 
@@ -375,9 +373,9 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ## Support
 
-- **Issues**: https://github.com/axionaxprotocol/axionax-core/issues
-- **Docs**: https://docs.axionax.org or [`../axionax-docs`](../axionax-docs)
-- **Main Repository**: https://github.com/axionaxprotocol/axionaxiues
+- **Issues**: https://github.com/axionaxprotocol/axionax-deploy/issues
+- **Docs**: https://docs.axionax.org or [`axionax-docs`](https://github.com/axionaxprotocol/axionax-docs)
+- **GitHub Organization**: https://github.com/axionaxprotocol
 
 ### Community (Coming Q1 2026)
 
