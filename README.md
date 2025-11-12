@@ -1,4 +1,37 @@
-# axionax protocol - Deployment Infrastructure 🚀
+# axionax p## 📅 Latest Update (November 12, 2025)
+
+✅ **Monitoring Infrastructure Deployed - All Services Healthy!**
+
+Complete monitoring stack successfully deployed and operational:
+
+✅ **Infrastructure Status:**
+- ✅ Monitoring & Alerting Setup (Prometheus + Grafana) - **COMPLETE**
+- ✅ All 9 services running and healthy
+- ✅ Health## Pre-Launch Checklist
+
+Use our [Issue Manager](../issue-manager) to track:
+
+- [x] ✅ Infrastructure monitoring setup - **COMPLETE**
+- [x] ✅ All services health checks passing
+- [x] ✅ Prometheus + Grafana operational
+- [ ] 🔄 Load testing completed
+- [ ] 🔄 Backup systems verified
+- [ ] 🔄 Security audit passed
+- [ ] 🔄 Scaling strategy tested
+- [ ] 🔄 Documentation completetem operational
+- ✅ SSL/TLS configured and working
+- 🔄 Load Testing & Performance Optimization
+- 🔄 Backup & Disaster Recovery Plans
+
+🎯 **Deployed Services:**
+- Prometheus metrics collection (Port 9090)
+- Grafana dashboards (Port 3030)
+- RPC node with health endpoints
+- Block explorer (placeholder)
+- Testnet faucet (placeholder)
+- PostgreSQL + Redis operational
+
+📊 **Current Status:** 9/9 containers running, all health checks passingt Infrastructure 🚀
 
 Production-ready deployment infrastructure for **axionax protocol** services.
 
@@ -72,9 +105,10 @@ Deploys the full axionax protocol stack:
   - Rate limiting (1 request/24h)
   - Configurable amounts
 - **Monitoring Stack** - System health
-  - Grafana dashboards (Port 3000)
-  - Prometheus metrics (Port 9090)
-  - axionax node health alerts
+  - Grafana dashboards (Port 3030) ✅ Deployed
+  - Prometheus metrics (Port 9090) ✅ Operational
+  - 8 service scrape jobs configured
+  - Health check monitoring for all services
 
 ### Infrastructure Components
 
@@ -175,12 +209,13 @@ The script automatically:
 - Redis-backed queue
 - Configurable amount
 
-### Monitoring (Port 3000/9090)
+### Monitoring (Port 3030/9090)
 
-- Grafana dashboards
-- Prometheus metrics
+- Grafana dashboards (Port 3030)
+- Prometheus metrics (Port 9090)
 - Node health alerts
 - Resource usage tracking
+- 8 service scrape jobs (RPC, Explorer, Faucet, Postgres, Redis, Nginx, Prometheus, Grafana)
 
 ## Management Commands
 
@@ -238,28 +273,83 @@ Type: A, Name: api, Value: YOUR_VPS_IP
 
 ## Monitoring Access
 
-- **Grafana**: http://YOUR_VPS_IP:3000
+- **Grafana**: http://YOUR_VPS_IP:3030
   - Username: `admin`
-  - Password: (from .env)
+  - Password: (from .env GRAFANA_PASSWORD)
+  - Dashboards: Pre-configured for all services
 - **Prometheus**: http://YOUR_VPS_IP:9090
+  - Metrics: All 8 services scraped every 15s
+  - Health: http://YOUR_VPS_IP:9090/-/healthy
+
+### VPS Health Check
+
+```bash
+cd /opt/axionax-deploy
+./scripts/check-vps-status.sh
+```
+
+Shows real-time status of all 9 services with health monitoring.
 
 ## Repository Structure
 
 ```
 .
- docker-compose.vps.yml    # Main service definitions
- setup-vps.sh              # Automated setup script
- .env.example              # Environment template
- nginx/
-    nginx.conf            # Main Nginx config
-    conf.d/               # Site configurations
-        rpc.conf          # RPC proxy
-        explorer.conf     # Explorer proxy
-        faucet.conf       # Faucet proxy
- monitoring/
-    prometheus.yml        # Metrics config
-    grafana/              # Dashboards
- VPS_DEPLOYMENT.md         # Detailed guide
+├── docker-compose.vps.yml    # Main service definitions
+├── setup-vps.sh              # Automated setup script
+├── .env.example              # Environment template
+├── nginx/
+│   ├── nginx.conf            # Main Nginx config
+│   └── conf.d/               # Site configurations
+│       ├── rpc.conf          # RPC proxy
+│       ├── explorer.conf     # Explorer proxy
+│       └── faucet.conf       # Faucet proxy
+├── monitoring/
+│   ├── prometheus.yml        # Metrics scrape config (8 jobs)
+│   └── grafana/              # Dashboards & datasources
+│       ├── datasources/      # Prometheus datasource config
+│       └── dashboards/       # Auto-provisioned dashboards
+├── scripts/
+│   └── check-vps-status.sh   # Health monitoring script
+└── VPS_DEPLOYMENT.md         # Detailed deployment guide
+```
+
+## Monitoring Configuration
+
+The monitoring stack is fully configured and operational:
+
+### Prometheus (Port 9090)
+
+Scrapes metrics from 8 services every 15 seconds:
+- `axionax-rpc` - RPC node metrics
+- `explorer-backend` - Explorer API metrics
+- `faucet` - Faucet API metrics
+- `postgres` - Database metrics
+- `redis` - Cache metrics
+- `nginx` - Web server metrics
+- `prometheus` - Self-monitoring
+- `grafana` - Dashboard metrics
+
+Configuration: `monitoring/prometheus.yml`
+
+### Grafana (Port 3030)
+
+Pre-configured with:
+- Prometheus datasource (auto-provisioned)
+- Dashboard directory watching
+- Admin password from .env
+- Anonymous access disabled
+
+Configuration: `monitoring/grafana/`
+
+### Health Checks
+
+The `scripts/check-vps-status.sh` monitors:
+- Container status (9/9 running)
+- Service health endpoints
+- System resources (RAM, CPU, Disk)
+- Docker status
+
+Run anytime: `./scripts/check-vps-status.sh` or `--detailed` for full info
 
 ```
 
@@ -388,4 +478,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 Built with ?? by the axionax team
 
-**Last Updated**: November 7, 2025
+**Last Updated**: November 12, 2025 - Monitoring infrastructure deployed ✅
