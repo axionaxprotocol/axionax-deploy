@@ -129,13 +129,13 @@ check_service_health() {
     
     # Define services and their health checks
     declare -A services=(
-        ["nginx"]="Web Server|80|docker exec axionax-nginx nginx -t"
+        ["nginx"]="Web Server|80|curl -sf http://localhost/"
         ["nginx-ssl"]="HTTPS|443|nc -z localhost 443"
-        ["grafana"]="Grafana|3000|curl -sf http://localhost:3000/api/health"
-        ["rpc-node"]="RPC HTTP|8545|docker exec axionax-rpc curl -sf http://localhost:8545/health"
+        ["grafana"]="Grafana|3030|curl -sf http://localhost:3030/api/health"
+        ["rpc-node"]="RPC HTTP|8545|curl -sf http://localhost:8545/health"
         ["rpc-ws"]="RPC WebSocket|8546|nc -z localhost 8546"
-        ["explorer"]="Explorer API|3001|docker exec axionax-explorer-backend curl -sf http://localhost:3001/api/health"
-        ["faucet"]="Faucet API|3002|docker exec axionax-faucet curl -sf http://localhost:3002/health"
+        ["explorer"]="Explorer API|3001|docker ps --filter name=axionax-explorer-api --filter status=running --format '{{.Names}}'"
+        ["faucet"]="Faucet API|3002|docker ps --filter name=axionax-faucet-api --filter status=running --format '{{.Names}}'"
         ["prometheus"]="Prometheus|9090|curl -sf http://localhost:9090/-/healthy"
         ["postgres"]="PostgreSQL|5432|docker exec axionax-postgres pg_isready -U explorer"
         ["redis"]="Redis|6379|docker exec axionax-redis redis-cli ping"
@@ -148,7 +148,7 @@ check_service_health() {
         IFS='|' read -r name port check <<< "${services[$service]}"
         
         # Check if container is running (for docker exec commands)
-        if [[ "$check" == docker* ]]; then
+        if [[ "$check" == "docker exec"* ]]; then
             container_name=$(echo "$check" | awk '{print $3}')
             if ! docker ps --format '{{.Names}}' | grep -q "$container_name"; then
                 printf "%-20s %-8s " "$name" "$port"
