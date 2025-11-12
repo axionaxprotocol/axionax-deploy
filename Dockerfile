@@ -1,6 +1,6 @@
 # Stage 1: Rust Builder
 # This stage compiles the Rust core application into a static binary.
-FROM rust:1.78.0-slim-bookworm as rust-builder
+FROM rust:1.83-slim-bookworm as rust-builder
 
 WORKDIR /build
 
@@ -23,7 +23,7 @@ RUN cargo build --release
 
 # Stage 2: Python Bridge Builder (Maturin)
 # This stage uses a Rust base image because it needs BOTH cargo and python.
-FROM rust:1.78.0-slim-bookworm as python-bridge-builder
+FROM rust:1.83-slim-bookworm as python-bridge-builder
 
 WORKDIR /build
 
