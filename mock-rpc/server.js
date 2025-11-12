@@ -7,7 +7,7 @@ const WS_PORT = process.env.WS_PORT || 8546;
 const CHAIN_ID = process.env.CHAIN_ID || '888';
 const NETWORK = process.env.NETWORK || 'axionax-testnet-1';
 
-app.use(bodyParser.json());
+app.use(bodyParser.json({ strict: false }));
 
 // Mock blockchain state
 let blockNumber = 1000;
